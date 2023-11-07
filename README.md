@@ -6,3 +6,4 @@
 # Tutorial
 
 ## Step 1
+- Download the latest release [here](https://github.com/31b4/Leetcode-Premium-Bypass/releases/latest)
