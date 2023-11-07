@@ -1,6 +1,6 @@
 {
     "name": "Leetcode Premium Bypasser",
-    "version": "0.3.0",
+    "version": "1.0.0",
     "description": "Enables leetcode premium features",
     "permissions": ["storage", "unlimitedStorage","tabs"],
     "action": {
