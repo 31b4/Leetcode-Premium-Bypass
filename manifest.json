@@ -1,7 +1,7 @@
 {
     "name": "Leetcode Premium Bypasser",
     "version": "0.3.0",
-    "description": "Inject crowdsourced Leetcode premium data",
+    "description": "Enables leetcode premium features",
     "permissions": ["storage", "unlimitedStorage","tabs"],
     "action": {
       "default_popup": "dist/index.html"
