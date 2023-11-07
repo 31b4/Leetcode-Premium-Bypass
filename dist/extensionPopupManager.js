@@ -4,7 +4,6 @@ function fetchLatestUpdate() {
     let url =  `https://sheets.googleapis.com/v4/spreadsheets/1ilv8yYAIcggzTkehjuB_dsRI4LUxjkTPZz4hsBKJvwo/values/${range}?key=AIzaSyDDAE3rf1fjLGKM0FUHQeTcsmS6fCQjtDs`
     fetch(url)
     .then(data => data.json())
-    .then(data => setTextToElement(data))
 }
 
 function setTextToElement(data) { 
@@ -25,5 +24,10 @@ function getSpan(text){
     return span 
 }
 
+window.addEventListener('click',function(e){
+    if(e.target.href!==undefined){
+      chrome.tabs.create({url:e.target.href})
+    }
+  })
 
 fetchLatestUpdate()
