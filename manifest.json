@@ -1,8 +1,8 @@
 {
-    "name": "Leetcode Premium Unlocker",
-    "version": "0.8.7",
+    "name": "Leetcode Premium Bypasser",
+    "version": "0.3.0",
     "description": "Inject crowdsourced Leetcode premium data",
-    "permissions": ["storage", "unlimitedStorage"],
+    "permissions": ["storage", "unlimitedStorage","tabs"],
     "action": {
       "default_popup": "dist/index.html"
     },

@@ -1,0 +1,38 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ee9b1a;
+    color: #2c2c2c;
+}
+
+.popup-container {
+    width: 300px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #4c4c4c;
+}

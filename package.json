@@ -1,0 +1,25 @@
+{
+  "name": "leetcodepremiumbypass",
+  "version": "0.3.0",
+  "description": "<h1>Only aviable locally</h1>",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests/* --require @babel/register --recursive --timeout 300000",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dompurify": "^3.0.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.8",
+    "@babel/preset-env": "^7.21.5",
+    "@babel/register": "^7.21.0",
+    "mocha": "^10.2.0",
+    "selenium-webdriver": "^4.10.0",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
