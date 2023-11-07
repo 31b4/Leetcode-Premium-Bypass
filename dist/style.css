@@ -1,0 +1,49 @@
+
+:root {
+    --accent-color: #62C555;
+    --container-background: #101010; 
+    --container-sub-background: #282828; 
+    --default-text-color:rgb(247, 247, 247); 
+    --selected-text-color:rgb(134, 134, 134); 
+}
+
+.clickable{ 
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.green-text{
+    color:var(--accent-color)
+}
+
+.green-background{ 
+    background-color: var(--accent-color);
+}
+
+.black-background { 
+    background-color:var(--container-background)
+}
+
+.dark-grey-background{ 
+    color:var(--container-sub-background)
+}
+
+.selected-duration-button{ 
+    color:var(--selected-text-color);
+}
+
+.loading-logo {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid var(--accent-color); 
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+    margin: auto;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
