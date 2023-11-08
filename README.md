@@ -46,4 +46,4 @@
 - If its green click on it and enjoy :D
 <img width="876" alt="image" src="https://github.com/31b4/Leetcode-Premium-Bypass/assets/75566095/e4d41e19-af43-4c3c-9476-256a5ab7e159">
 
-$$ If its not working feel free to write on [Issue](https://github.com/31b4/Leetcode-Premium-Bypass/issues), im here to help
+$$ If its not working feel free to write on [Issue](https://github.com/31b4/Leetcode-Premium-Bypass/issues), im here to help $$
