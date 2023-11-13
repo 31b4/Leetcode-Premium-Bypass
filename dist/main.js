@@ -1,7 +1,51 @@
-/*! For license information please see main.js.LICENSE.txt */
-(() => {
+async function waitForStableHTML() {
+    return new Promise(resolve => {
+        let isStable = false;
+        let iterationCount = 0;
+        const maxIterations = 30;
+
+        // Callback function to be executed when mutations are observed
+        const mutationCallback = () => {
+            // Set isStable to false, indicating that there has been a change
+            isStable = false;
+        };
+
+        // Create a new MutationObserver with the callback function
+        const observer = new MutationObserver(mutationCallback);
+
+        // Start observing mutations in the document
+        observer.observe(document, { childList: true, subtree: true });
+
+        // Polling function to check for stability
+        const pollForStability = () => {
+            iterationCount++;
+
+            if (isStable || iterationCount >= maxIterations) {
+                // If stable or reached max iterations, disconnect the observer and resolve the promise
+                observer.disconnect();
+                resolve();
+            } else {
+                // If not stable, continue polling after a short delay
+                setTimeout(pollForStability, 100); // Adjust the delay as needed
+            }
+        };
+
+        // Start the polling mechanism
+        pollForStability();
+    });
+}
+
+async function waitAndContinue() {
+    console.log("Waiting for stable HTML");
+    await waitForStableHTML();
+    console.log("End");
+}
+
+(async () => {
+    console.log("Start");
+    await waitAndContinue()
     var e = {
-            856: function(e) {
+            856: function(e) {     
                 e.exports = function() {
                     "use strict";
                     const {
@@ -1301,7 +1345,7 @@
         class I {
             constructor() {
                 this.elementModifier = new O, this.dataFetcher = new D, this.containerManager = T, this.isFetching = !1, this.topProblemButtonId = 4, this.analyticsManager = k, this.name = "TopProblemUnlocker"
-            }
+            }   
             unlock() {
                 this.elementModifier.injectFunctionToTargetElement(this.getFunctionToBeInjected()), this.elementModifier.modifyElement(), this.analyticsManager.fireUnlockedDataEvent(this.name)
             }
