@@ -1,50 +1,52 @@
-# Video tutorial: https://www.youtube.com/watch?v=5oZMsPbBljo
-# Screenshots
+# Leetcode Premium Bypass
 
-<table>
-        <tr>
-            <td><img width="600" alt="image" src="https://github.com/31b4/Leetcode-Premium-Bypass/assets/75566095/e8cff7af-5fe1-45a6-b95a-809212f87116"></td>
-            <td><img width="600" alt="image" src="https://github.com/31b4/Leetcode-Premium-Bypass/assets/75566095/29ffa958-21a5-410b-9c59-c129ef4faae2"></td>
-        </tr>
-    </table>
+Unlock Leetcode's premium features without a subscription using the Leetcode Premium Bypass Chrome extension.
 
-# Tutorial
+## Table of Contents
+- [Installation](#installation)
+    - [Step 1: Download and Unzip](#step-1-download-and-unzip)
+    - [Step 2: Enable Developer Mode](#step-2-enable-developer-mode)
+    - [Step 3: Load the Extension](#step-3-load-the-extension)
+- [Usage](#usage)
+    - [Step 4: Test the Extension](#step-4-test-the-extension)
+- [Troubleshooting](#troubleshooting)
 
-## Step 1
+## Installation
 
-- Download the latest release [here](https://github.com/31b4/Leetcode-Premium-Bypass/releases/latest)
-- Unzip the file
+### Step 1: Download and Unzip
 
-  
-## Step 2
+1. Download the latest release [here](https://github.com/31b4/Leetcode-Premium-Bypass/releases/latest).
+2. Unzip the downloaded file.
 
-- Go to `chrome://extensions/` or  `settings` -> `extensions` on the left
-- then turn on developer mode
-<img width="163" alt="image" src="https://github.com/31b4/Leetcode-Premium-Bypass/assets/75566095/951ffb80-fa25-43ad-a211-d0bdf250606f">
- 
+### Step 2: Enable Developer Mode
 
-## Step 3
+1. Open your Chrome browser.
+2. Navigate to 'chrome://extensions/' or go to 'Settings' -> 'Extensions' on the left sidebar.
+3. Turn on Developer Mode using the toggle switch.
 
-- Click `Load unpacked`
-<img width="188" alt="image" src="https://github.com/31b4/Leetcode-Premium-Bypass/assets/75566095/3732c9af-b928-46d2-89a0-e0be17c46169">
+![Developer Mode](https://github.com/31b4/Leetcode-Premium-Bypass/assets/75566095/951ffb80-fa25-43ad-a211-d0bdf250606f)
 
-- Select the unzipped folder
-<img width="106" alt="image" src="https://github.com/31b4/Leetcode-Premium-Bypass/assets/75566095/d55e46a0-510e-4090-9844-321a07e99154">
+### Step 3: Load the Extension
 
-- Pin the extension
-<img width="287" alt="image" src="https://github.com/31b4/Leetcode-Premium-Bypass/assets/75566095/10e90bb9-a124-4d85-8926-bf1c30616958">
+1. Click on 'Load unpacked.'
 
+![Load Unpacked](https://github.com/31b4/Leetcode-Premium-Bypass/assets/75566095/3732c9af-b928-46d2-89a0-e0be17c46169)
 
-## Step 4
+2. Select the unzipped folder from Step 1.
 
-- Test the extension
-  - Go to [Leetcode](https://leetcode.com/problemset/all/)
-  - Refresh the page
+![Select Folder](https://github.com/31b4/Leetcode-Premium-Bypass/assets/75566095/d55e46a0-510e-4090-9844-321a07e99154)
 
-- If you see green Frequency bars, its working
-- You can click companies to see the most common questions
-- Or Find a premium question and refresh the page if its title not green
-- If its green click on it and enjoy :D
-<img width="876" alt="image" src="https://github.com/31b4/Leetcode-Premium-Bypass/assets/75566095/e4d41e19-af43-4c3c-9476-256a5ab7e159">
+## Usage
 
-$$ If its not working feel free to write on [Issue](https://github.com/31b4/Leetcode-Premium-Bypass/issues), im here to help $$
+### Step 4: Test the Extension
+
+1. Go to [Leetcode](https://leetcode.com/problemset/all/).
+2. Refresh the page.
+3. If you see green Frequency bars, it's working.
+4. Click on companies to see the most common questions.
+5. Find a premium question, and refresh the page if its title is not green.
+6. If it's green, click on it and enjoy :D
+
+![Extension in Action](https://github.com/31b4/Leetcode-Premium-Bypass/assets/75566095/e4d41e19-af43-4c3c-9476-256a5ab7e159)
+
+**If it's not working, feel free to write on [Issues](https://github.com/31b4/Leetcode-Premium-Bypass/issues); I'm here to help.**
