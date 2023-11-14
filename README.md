@@ -48,5 +48,5 @@ Unlock Leetcode's premium features without a subscription using the Leetcode Pre
 6. If it's green, click on it and enjoy :D
 
 ![Extension in Action](https://github.com/31b4/Leetcode-Premium-Bypass/assets/75566095/e4d41e19-af43-4c3c-9476-256a5ab7e159)
-
+### Troubleshooting
 **If it's not working, feel free to write on [Issues](https://github.com/31b4/Leetcode-Premium-Bypass/issues); I'm here to help.**
