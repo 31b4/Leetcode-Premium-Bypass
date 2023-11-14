@@ -574,6 +574,8 @@ async function waitAndContinue() {
         }
         class s {
             static getContainerBackgroundColor() {
+                return "#151515";
+                //leetcode changed ui?
                 switch (document.body.classList.contains("chakra-ui-dark")) {
                     case !0:
                         return "#151515";
@@ -582,6 +584,8 @@ async function waitAndContinue() {
                 }
             }
             static getComplementaryColor() {
+                return "#282828";
+                //leetcode changed ui?
                 switch (document.body.classList.contains("chakra-ui-dark")) {
                     case !0:
                         return "#282828";
