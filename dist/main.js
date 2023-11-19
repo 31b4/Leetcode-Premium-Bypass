@@ -1487,18 +1487,33 @@ async function waitAndContinue() {
                     this.addEventListenerToEditorialButton()
                 }), 50)
             }
+            findElementByTagNameAndInnerHTML(tagName, html, rootNode = document) {
+                const elements = rootNode.getElementsByTagName(tagName);
+            
+                for (let i = 0; i < elements.length; i++) {
+                    if (elements[i].innerHTML.includes(html)) {
+                        return elements[i];
+                    }
+                }
+            
+                return null;
+            }
             getEditorialButton() { // the div inside a of editorial
-                return document.querySelector("#qd-content > div.h-full.flex-col.ssg__qd-splitter-primary-w > div > div > div > div:nth-child(1) > div > div > a:nth-child(2) > div");
+                return this.findElementByTagNameAndInnerHTML("span","Editorial").parentNode;
             }
             disableEditorialRedirect() { // a tag of editorial
-                document.querySelector("#qd-content > div.h-full.flex-col.ssg__qd-splitter-primary-w > div > div > div > div:nth-child(1) > div > div > a:nth-child(2)").href = "javascript:void(0)"
+                this.findElementByTagNameAndInnerHTML("span","Editorial").parentNode.parentNode.href = "javascript:void(0)"
             }
             removeEditorialLockLogo() {
                 let e = this.getEditorialButton();
                 if (null == e) return void window.setTimeout((() => {
                     this.removeEditorialLockLogo()
                 }), 50);
+                    // free editorial
                     let t= document.querySelector("#qd-content > div.h-full.flex-col.ssg__qd-splitter-primary-w > div > div > div > div:nth-child(1) > div > div > a:nth-child(2) > div > span > div > div:nth-child(1) > div > svg")
+                    
+                    // All screen sizes
+                    // let t=this.findElementByTagNameAndInnerHTML("span","Editorial").getElementsByTagName('svg')[0]
                 if (null == t) {
                     if (this.checkCount > 5) return;
                     return window.setTimeout((() => {
@@ -1582,7 +1597,7 @@ async function waitAndContinue() {
                     this.elementModifier = new B, this.dataFetcher = new M, this.containerManager = T, this.isFetching = !1, this.problemTagButtonId = 3, this.analyticsManager = k, this.name = "ProblemTagsUnlocker"
                 }
                 onTagButtonClicked = () => {
-                    if (this.isFetching) return;
+                    // if (this.isFetching) return;
                     this.isFetching = !0;
                     let e = document.URL.split("/")[4];
                     this.analyticsManager.fireModifiedButtonClickedEvent(this.problemTagButtonId, "ProblemTagButton", e), this.containerManager.clearModalContent(), this.containerManager.openModal(), this.containerManager.showLoadingIcon(), this.dataFetcher.fetchData(e).then((e => this.onFetchSucces(e))).then((e => {
