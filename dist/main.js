@@ -1380,11 +1380,11 @@ async function waitAndContinue() {
                 this.tagButtonListener = []
             }
             getTabMenu() {
-                let e = document.getElementsByClassName("gap-8")[0];
+                let e = document.getElementsByClassName("gap-8")[1];
                 return null == e && (e = document.getElementsByClassName("gap-6")[0]), e
             }
             modifyElement() {
-                return//not working
+                // return//not working
                 let e = this.getTabMenu();
                 null != e && 0 != e.children[0].children.length ? (this.isDescriptionTabActive() && this.modifyCompaniesTagButton(), this.addObserverToLeftTab()) : window.setTimeout((() => {
                     this.modifyElement()
@@ -1407,7 +1407,7 @@ async function waitAndContinue() {
                 return 2 == this.getTabMenu().children[0].children[0].childElementCount
             }
             modifyCompaniesTagButton() {
-                let e = document.getElementsByClassName("pt-3")[0];
+                let e=document.querySelector("#qd-content > div.h-full.flex-col.ssg__qd-splitter-primary-w > div > div > div > div.flex.h-full.w-full.overflow-y-auto.rounded-b > div > div > div.px-5.pt-3 > div > div > div");
                 if (!e) return void window.setTimeout((() => {
                     this.modifyCompaniesTagButton.bind(this)()
                 }), 100);
@@ -1469,11 +1469,11 @@ async function waitAndContinue() {
                 this.elementModifier.push(e)
             }
             getTabMenu() {
-                let e = document.getElementsByClassName("gap-8")[0];
+                let e = document.getElementsByClassName("gap-8")[1];
                 return null == e && (e = document.getElementsByClassName("gap-6")[0]), e
             }
             modifyElement() {
-                return // not working
+                // return // not working
                 null != this.getTabMenu() ? this.addEventListenerToEditorialButton() : window.setTimeout((() => {
                     this.modifyElement()
                 }), 100)
@@ -1487,18 +1487,18 @@ async function waitAndContinue() {
                     this.addEventListenerToEditorialButton()
                 }), 50)
             }
-            getEditorialButton() {
-                return document.getElementsByClassName("gap-1.5")[0].children[1].getElementsByClassName("flex")[1]
+            getEditorialButton() { // the div inside a of editorial
+                return document.querySelector("#qd-content > div.h-full.flex-col.ssg__qd-splitter-primary-w > div > div > div > div:nth-child(1) > div > div > a:nth-child(2) > div");
             }
-            disableEditorialRedirect() {
-                document.getElementsByClassName("gap-1.5")[0].children[1].href = "javascript:void(0)"
+            disableEditorialRedirect() { // a tag of editorial
+                document.querySelector("#qd-content > div.h-full.flex-col.ssg__qd-splitter-primary-w > div > div > div > div:nth-child(1) > div > div > a:nth-child(2)").href = "javascript:void(0)"
             }
             removeEditorialLockLogo() {
                 let e = this.getEditorialButton();
                 if (null == e) return void window.setTimeout((() => {
                     this.removeEditorialLockLogo()
                 }), 50);
-                let t = document.getElementsByClassName("gap-1.5")[0].children[1].getElementsByClassName("flex")[1].children[0].getElementsByTagName("svg")[0];
+                    let t= document.querySelector("#qd-content > div.h-full.flex-col.ssg__qd-splitter-primary-w > div > div > div > div:nth-child(1) > div > div > a:nth-child(2) > div > span > div > div:nth-child(1) > div > svg")
                 if (null == t) {
                     if (this.checkCount > 5) return;
                     return window.setTimeout((() => {
