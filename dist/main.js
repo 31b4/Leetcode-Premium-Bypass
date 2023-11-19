@@ -573,10 +573,10 @@ async function waitAndContinue() {
             }
         }
         class s {
-            static getContainerBackgroundColor() {
-                return "#151515";
-                //leetcode changed ui?
-                switch (document.body.classList.contains("chakra-ui-dark")) {
+            static getContainerBackgroundColor() { // ui darkmode
+                var htmlElement = document.querySelector('html');
+                console.log(htmlElement.classList.contains('dark'))
+                switch (htmlElement.classList.contains('dark')) {
                     case !0:
                         return "#151515";
                     case !1:
@@ -584,9 +584,8 @@ async function waitAndContinue() {
                 }
             }
             static getComplementaryColor() {
-                return "#282828";
-                //leetcode changed ui?
-                switch (document.body.classList.contains("chakra-ui-dark")) {
+                var htmlElement = document.querySelector('html');
+                switch (htmlElement.classList.contains('dark')) {
                     case !0:
                         return "#282828";
                     case !1:
