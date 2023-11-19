@@ -1607,7 +1607,7 @@ async function waitAndContinue() {
                     }))
                 };
                 unlock() {
-                    this.elementModifier.modifyElement(), this.elementModifier.addTagButtonOnClickListener(this.onTagButtonClicked), this.analyticsManager.fireUnlockedDataEvent(this.name)
+                    this.elementModifier.addTagButtonOnClickListener(this.onTagButtonClicked), this.elementModifier.modifyElement(), this.analyticsManager.fireUnlockedDataEvent(this.name)
                 }
                 onFetchSucces = e => {
                     let t = e.getKeys(),
