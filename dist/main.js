@@ -1597,7 +1597,7 @@ async function waitAndContinue() {
                     this.elementModifier = new B, this.dataFetcher = new M, this.containerManager = T, this.isFetching = !1, this.problemTagButtonId = 3, this.analyticsManager = k, this.name = "ProblemTagsUnlocker"
                 }
                 onTagButtonClicked = () => {
-                    // if (this.isFetching) return;
+                    if (this.isFetching) return;
                     this.isFetching = !0;
                     let e = document.URL.split("/")[4];
                     this.analyticsManager.fireModifiedButtonClickedEvent(this.problemTagButtonId, "ProblemTagButton", e), this.containerManager.clearModalContent(), this.containerManager.openModal(), this.containerManager.showLoadingIcon(), this.dataFetcher.fetchData(e).then((e => this.onFetchSucces(e))).then((e => {
@@ -1607,7 +1607,7 @@ async function waitAndContinue() {
                     }))
                 };
                 unlock() {
-                    this.elementModifier.modifyElement(), this.elementModifier.addTagButtonOnClickListener(this.onTagButtonClicked), this.analyticsManager.fireUnlockedDataEvent(this.name)
+                    this.elementModifier.addTagButtonOnClickListener(this.onTagButtonClicked), this.elementModifier.modifyElement(), this.analyticsManager.fireUnlockedDataEvent(this.name)
                 }
                 onFetchSucces = e => {
                     let t = e.getKeys(),
