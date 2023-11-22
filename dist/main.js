@@ -1408,6 +1408,9 @@ async function waitAndContinue() {
             }
             modifyCompaniesTagButton() {
                 let e=document.querySelector("#qd-content > div.h-full.flex-col.ssg__qd-splitter-primary-w > div > div > div > div.flex.h-full.w-full.overflow-y-auto.rounded-b > div > div > div.px-5.pt-3 > div > div > div");
+                if(e==null){
+                    e=document.querySelector("div > div.flex.w-full.flex-1.flex-col.gap-4.overflow-y-auto.px-4.py-5 > div.flex.gap-1 > div:nth-child(3)")
+                }
                 if (!e) return void window.setTimeout((() => {
                     this.modifyCompaniesTagButton.bind(this)()
                 }), 100);
