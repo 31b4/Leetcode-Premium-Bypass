@@ -1406,9 +1406,10 @@ async function waitAndContinue() {
             isDescriptionTabActive() {
                 return 2 == this.getTabMenu().children[0].children[0].childElementCount
             }
-            modifyCompaniesTagButton() {
+            modifyCompaniesTagButton() { //companies tag
                 let e=document.querySelector("#qd-content > div.h-full.flex-col.ssg__qd-splitter-primary-w > div > div > div > div.flex.h-full.w-full.overflow-y-auto.rounded-b > div > div > div.px-5.pt-3 > div > div > div");
                 if(e==null){
+                    //dynamic ui
                     e=document.querySelector("div > div.flex.w-full.flex-1.flex-col.gap-4.overflow-y-auto.px-4.py-5 > div.flex.gap-1 > div:nth-child(3)")
                 }
                 if (!e) return void window.setTimeout((() => {
