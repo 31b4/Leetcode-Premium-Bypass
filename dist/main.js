@@ -1381,7 +1381,7 @@ async function waitAndContinue() {
             }
             getTabMenu() {
                 let e = document.getElementsByClassName("gap-8")[1];
-                return null == e && (e = document.getElementsByClassName("gap-6")[0]), e
+                return null == e && (e = document.getElementsByClassName("flexlayout__tab_button")[0]), e
             }
             modifyElement() {
                 // return//not working
@@ -1406,8 +1406,12 @@ async function waitAndContinue() {
             isDescriptionTabActive() {
                 return 2 == this.getTabMenu().children[0].children[0].childElementCount
             }
-            modifyCompaniesTagButton() {
+            modifyCompaniesTagButton() { //companies tag
                 let e=document.querySelector("#qd-content > div.h-full.flex-col.ssg__qd-splitter-primary-w > div > div > div > div.flex.h-full.w-full.overflow-y-auto.rounded-b > div > div > div.px-5.pt-3 > div > div > div");
+                if(e==null){
+                    //dynamic ui
+                    e=document.querySelector("div > div.flex.w-full.flex-1.flex-col.gap-4.overflow-y-auto.px-4.py-5 > div.flex.gap-1 > div:nth-child(3)")
+                }
                 if (!e) return void window.setTimeout((() => {
                     this.modifyCompaniesTagButton.bind(this)()
                 }), 100);
@@ -1470,7 +1474,7 @@ async function waitAndContinue() {
             }
             getTabMenu() {
                 let e = document.getElementsByClassName("gap-8")[1];
-                return null == e && (e = document.getElementsByClassName("gap-6")[0]), e
+                return null == e && (e = document.getElementsByClassName("flexlayout__tab_button")[0]), e
             }
             modifyElement() {
                 // return // not working
