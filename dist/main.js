@@ -1381,7 +1381,7 @@ async function waitAndContinue() {
             }
             getTabMenu() {
                 let e = document.getElementsByClassName("gap-8")[1];
-                return null == e && (e = document.getElementsByClassName("gap-6")[0]), e
+                return null == e && (e = document.getElementsByClassName("flexlayout__tab_button")[0]), e
             }
             modifyElement() {
                 // return//not working
@@ -1470,7 +1470,7 @@ async function waitAndContinue() {
             }
             getTabMenu() {
                 let e = document.getElementsByClassName("gap-8")[1];
-                return null == e && (e = document.getElementsByClassName("gap-6")[0]), e
+                return null == e && (e = document.getElementsByClassName("flexlayout__tab_button")[0]), e
             }
             modifyElement() {
                 // return // not working
