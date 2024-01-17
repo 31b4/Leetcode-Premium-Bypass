@@ -1,3 +1,5 @@
+## 🚨MAKE SURE TO KEEP YOUR EXTENSION UP TO DATE, WITH A ⭐️ ON THIS REPO🚨
+
 # Leetcode Premium Bypass
 
 Unlock Leetcode's premium features without a subscription using the Leetcode Premium Bypass Chrome extension.
