@@ -1483,7 +1483,7 @@ async function waitAndContinue() {
                 }), 100)
             }
             addEventListenerToEditorialButton() {
-                let e = this.getEditorialButton();
+                let e = this.getEditorialButton();                
                 null != e ? (e.parentElement.parentElement.addEventListener("click", (t => {
                     for (let t = 0; t <= this.elementModifier.length - 1; t++) this.elementModifier[t](e);
                     null != e.getAttribute("problem-id") && t.stopImmediatePropagation()
@@ -1491,6 +1491,7 @@ async function waitAndContinue() {
                     this.addEventListenerToEditorialButton()
                 }), 50)
             }
+
             findElementByTagNameAndInnerHTML(tagName, html, rootNode = document) {
                 const elements = rootNode.getElementsByTagName(tagName);
             
@@ -1499,10 +1500,19 @@ async function waitAndContinue() {
                         return elements[i];
                     }
                 }
-            
+                
                 return null;
             }
             getEditorialButton() { // the div inside a of editorial
+                let sv = this.findElementByTagNameAndInnerHTML("span","Editorial")
+
+                if (sv == null){
+                    const style = 'background-color: darkblue; color: white; font-style: italic; border: 5px solid hotpink; font-size: 2em;' 
+                    console.log("%cTurn off dynamic ui, for editorial to work, https://github.com/31b4/Leetcode-Premium-Bypass/issues/14", style);
+                    //dynamic ui
+                    return document.querySelector("div > div.flex.w-full.flex-1.flex-col.gap-4.overflow-y-auto.px-4.py-5 > div.flex.gap-1 > div:nth-child(4)")
+                    return sv.parentNode
+                }
                 return this.findElementByTagNameAndInnerHTML("span","Editorial").parentNode;
             }
             disableEditorialRedirect() { // a tag of editorial
@@ -1510,6 +1520,7 @@ async function waitAndContinue() {
             }
             removeEditorialLockLogo() {
                 let e = this.getEditorialButton();
+
                 if (null == e) return void window.setTimeout((() => {
                     this.removeEditorialLockLogo()
                 }), 50);
