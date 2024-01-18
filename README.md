@@ -12,7 +12,7 @@ Watch the installation guide on [YouTube](https://www.youtube.com/watch?v=tARc8Q
 
 ## Known Issues with solutions
 - Editorial now working on dynamic UI: https://github.com/31b4/Leetcode-Premium-Bypass/issues/14
-- Manifest missing: https://github.com/31b4/Leetcode-Premium-Bypass/issues/42
+- Failed to load extension: https://github.com/31b4/Leetcode-Premium-Bypass/issues/44
 
 ## Table of Contents
 - [Installation](#installation)
