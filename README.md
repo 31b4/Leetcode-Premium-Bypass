@@ -10,6 +10,10 @@ Unlock Leetcode's premium features without a subscription using the Leetcode Pre
 ## Video Tutorial
 Watch the installation guide on [YouTube](https://www.youtube.com/watch?v=tARc8QI5AnE).
 
+## Known Issues with solutions
+- Editorial now working on dynamic UI: https://github.com/31b4/Leetcode-Premium-Bypass/issues/14
+- Manifest missing: https://github.com/31b4/Leetcode-Premium-Bypass/issues/42
+
 ## Table of Contents
 - [Installation](#installation)
     - [Step 1: Download and Unzip](#step-1-download-and-unzip)
