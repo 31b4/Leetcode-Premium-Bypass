@@ -1,4 +1,6 @@
 ## 🚨MAKE SURE TO KEEP YOUR EXTENSION UP TO DATE, WITH A ⭐️ ON THIS REPO🚨
+## 👨‍🔧Help me maintenance this extension with a [☕ coffee](https://github.com/sponsors/31b4)
+
 
 # Leetcode Premium Bypass
 
