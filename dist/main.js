@@ -1,13 +1,13 @@
 async function waitForStableHTML() {
     return new Promise(resolve => {
-        let isStable = false;
+        let isDOMStable = false;
         let iterationCount = 0;
         const maxIterations = 30;
 
         // Callback function to be executed when mutations are observed
         const mutationCallback = () => {
-            // Set isStable to false, indicating that there has been a change
-            isStable = false;
+            // Set isDOMStable to false, indicating that there has been a change
+            isDOMStable = false;
         };
 
         // Create a new MutationObserver with the callback function
@@ -20,7 +20,7 @@ async function waitForStableHTML() {
         const pollForStability = () => {
             iterationCount++;
 
-            if (isStable || iterationCount >= maxIterations) {
+            if (isDOMStable || iterationCount >= maxIterations) {
                 // If stable or reached max iterations, disconnect the observer and resolve the promise
                 observer.disconnect();
                 resolve();
@@ -150,16 +150,18 @@ async function waitAndContinue() {
                         G = o(/[\u0000-\u0020\u00A0\u1680\u180E\u2000-\u2029\u205F\u3000]/g),
                         $ = o(/^html$/i);
                     var W = Object.freeze({
+
                         __proto__: null,
-                        MUSTACHE_EXPR: B,
-                        ERB_EXPR: F,
-                        TMPLIT_EXPR: U,
-                        DATA_ATTR: H,
-                        ARIA_ATTR: j,
+                        MUSTACHE_EXPRESSION: B,
+                        ERB_EXPRESSION: F,
+                        TEMPLATE_LITERAL_EXPRESSION: U,
+                        DATA_ATTRIBUTE: H,
+                        ARIA_ATTRIBUTE: j,
                         IS_ALLOWED_URI: z,
                         IS_SCRIPT_OR_DATA: q,
-                        ATTR_WHITESPACE: G,
+                        ATTRIBUTE_WHITESPACE: G,
                         DOCTYPE_NAME: $
+                       
                     });
                     const Y = () => "undefined" == typeof window ? null : window;
                     return function t() {
@@ -198,13 +200,15 @@ async function waitAndContinue() {
                         let ae = {};
                         i.isSupported = "function" == typeof e && "function" == typeof X && Z && void 0 !== Z.createHTMLDocument;
                         const {
-                            MUSTACHE_EXPR: re,
-                            ERB_EXPR: oe,
-                            TMPLIT_EXPR: le,
-                            DATA_ATTR: se,
-                            ARIA_ATTR: ce,
+
+                            
+                            MUSTACHE_EXPRESSION: re,
+                            ERB_EXPRESSION: oe,
+                            TEMPLATE_LITERAL_EXPRESSION: le,
+                            DATA_ATTRIBUTE: se,
+                            ARIA_ATTRIBUTE: ce,
                             IS_SCRIPT_OR_DATA: de,
-                            ATTR_WHITESPACE: he
+                            ATTRIBUTE_WHITESPACE: he
                         } = W;
                         let {
                             IS_ALLOWED_URI: me
@@ -574,7 +578,7 @@ async function waitAndContinue() {
         }
         class s {
             static getContainerBackgroundColor() { // ui darkmode
-                var htmlElement = document.querySelector('html');
+                const htmlElement = document.querySelector('html');
                 console.log(htmlElement.classList.contains('dark'))
                 switch (htmlElement.classList.contains('dark')) {
                     case !0:
@@ -584,7 +588,7 @@ async function waitAndContinue() {
                 }
             }
             static getComplementaryColor() {
-                var htmlElement = document.querySelector('html');
+                const htmlElement = document.querySelector('html');
                 switch (htmlElement.classList.contains('dark')) {
                     case !0:
                         return "#282828";
@@ -634,7 +638,7 @@ async function waitAndContinue() {
                 if (this.isSwiperLoading()) return void window.setTimeout((() => {
                     this.addObserverToCompaniesSection.bind(this)()
                 }), 100);
-                var e = document.getElementsByClassName("swiper-autoheight")[1].parentNode.parentNode;
+                let e = document.getElementsByClassName("swiper-autoheight")[1].parentNode.parentNode;
                 const t = new MutationObserver((() => {
                     this.modifyActiveElement()
                 }));
