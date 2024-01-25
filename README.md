@@ -10,7 +10,7 @@ Unlock Leetcode's premium features without a subscription using the Leetcode Pre
     - Original creator of the extension: [@Edwardsoen](https://github.com/Edwardsoen)
     - A helpful contributor: [@Gourav-21](https://github.com/Gourav-21)
 ## Video Tutorial
-Watch the installation guide on [YouTube](https://www.youtube.com/watch?v=tARc8QI5AnE).
+Watch the installation guide on [X](https://twitter.com/31b4_/status/1748694097433395416).
 
 ## Known Issues with solutions
 - Editorial now working on dynamic UI: https://github.com/31b4/Leetcode-Premium-Bypass/issues/14
