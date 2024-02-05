@@ -1,4 +1,4 @@
-## 🚨MAKE SURE TO KEEP YOUR EXTENSION UP TO DATE, WITH A ⭐️ ON THIS REPO🚨
+## 🚨IMPORTANT UPDATE: Extension permanently disabled due to DMCA takedown.🚨
 
 # Leetcode Premium Bypass
 
