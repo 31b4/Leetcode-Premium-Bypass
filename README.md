@@ -1,4 +1,4 @@
-## 🚨IMPORTANT UPDATE: Extension permanently disabled due to DMCA takedown.🚨
+## 🚨IMPORTANT: Extension permanently disabled due to DMCA takedown.🚨
 
 # Leetcode Premium Bypass
 
