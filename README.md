@@ -7,7 +7,7 @@ Unlock Leetcode's premium features without a subscription using the Leetcode Pre
 - Credits: 
     - A helpful contributor: [@Gourav-21](https://github.com/Gourav-21)
 ## Video Tutorial
-Watch the installation guide on [X](https://twitter.com/31b4_/status/1748694097433395416).
+~~Watch the installation guide on [X](https://twitter.com/31b4_/status/1748694097433395416).~~
 
 ## Known Issues with solutions
 - Editorial now working on dynamic UI: https://github.com/31b4/Leetcode-Premium-Bypass/issues/14
@@ -18,15 +18,15 @@ Watch the installation guide on [X](https://twitter.com/31b4_/status/17486940974
     - [Step 1: Download and Unzip](#step-1-download-and-unzip)
     - [Step 2: Enable Developer Mode](#step-2-enable-developer-mode)
     - [Step 3: Load the Extension](#step-3-load-the-extension)
-- [Usage](#usage)
-    - [Step 4: Test the Extension](#step-4-test-the-extension)
+- ~~[Usage](#usage)~~
+    - ~~[Step 4: Test the Extension](#step-4-test-the-extension)~~
 - [Troubleshooting](#troubleshooting)
 
 ## Installation
 
 ### Step 1: Download and Unzip
 
-1. Download the latest release [here](https://github.com/31b4/Leetcode-Premium-Bypass/releases/latest).
+1. Clone the repo
 2. Unzip the downloaded file.
 
 ### Step 2: Enable Developer Mode
@@ -47,17 +47,17 @@ Watch the installation guide on [X](https://twitter.com/31b4_/status/17486940974
 
 ![Select Folder](https://github.com/31b4/Leetcode-Premium-Bypass/assets/75566095/d55e46a0-510e-4090-9844-321a07e99154)
 
-## Usage
+## ~~Usage~~
 
-### Step 4: Test the Extension
+### ~~Step 4: Test the Extension~~
 
-1. Go to [Leetcode](https://leetcode.com/problemset/all/).
-2. Refresh the page.
-3. If you see green Frequency bars, it's working.
-4. Click on companies to see the most common questions.
-5. Find a premium question, and refresh the page if its title is not green.
-6. If it's green, click on it and enjoy :D
+1. ~~Go to [Leetcode](https://leetcode.com/problemset/all/).~~
+2. ~~Refresh the page.~~
+3. ~~If you see green Frequency bars, it's working.~~
+4. ~~Click on companies to see the most common questions.~~
+5. ~~Find a premium question, and refresh the page if its title is not green.~~
+6. ~~If it's green, click on it and enjoy :D~~
 
 ![Extension in Action](https://github.com/31b4/Leetcode-Premium-Bypass/assets/75566095/e4d41e19-af43-4c3c-9476-256a5ab7e159)
 ### Troubleshooting
-**If it's not working, feel free to write on [Issues](https://github.com/31b4/Leetcode-Premium-Bypass/issues); I'm here to help.**
+~~**If it's not working, feel free to write on [Issues](https://github.com/31b4/Leetcode-Premium-Bypass/issues); I'm here to help.**~~
